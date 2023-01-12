@@ -23,7 +23,6 @@
     background-repeat: no-repeat;
     background-position: bottom right, center left ;
     width: 100%;
-    height: 650px;
 }
 
 /* header and navigation style */
@@ -197,4 +196,36 @@ input{
     display: flex;
     text-decoration: none;
     text-align: center;
+}
+
+/* responsive style */
+
+@media screen and (max-width:576px) {
+    nav,
+    .banner, 
+    .skills-container, 
+    .resume-content, 
+    .about-info-container, 
+    .contact{
+        flex-direction: column;
+        gap: 30px;
+        padding: 10px 20px;
+    }
+    .banner{
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about, .contact{
+        padding: 20px;
+    }
+    /* .contact input[type="trxt"], input[type="email"], textarea{
+        padding: 0;
+    } */
+
 }
